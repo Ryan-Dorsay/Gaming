@@ -1,0 +1,813 @@
+
+
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: white;
+	background-color: black;
+}
+/* all links in general */
+a:link,
+a:visited {
+	color: #4682B4;
+}
+
+p {
+	line-height: 1.65em;
+	margin: 0 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 1em 0; 
+}
+
+/* General Layout */
+div.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+
+}
+
+/* Content Area */
+
+/* post title links */
+article.post a {
+	color: #B22222;
+	text-decoration: none;
+	font-size: 120%;
+	padding-bottom: 10px;
+}
+
+article.post {
+	border-bottom: 1px dotted grey;
+	margin-bottom: 20px;
+} 
+
+/* Aside Styles */
+
+/* aside content */
+article.post-aside {
+	font-size: 119%;
+	padding: 10px;
+	font-family: Georgia;
+	color: white;
+}
+/* aside title */
+article.post-aside a {
+	font-style: italic;
+	color: grey;
+	font-size: 110%;
+}  
+
+/* ----------------------------------- */
+
+/* post link */
+article.post-link a {
+color: #4682B4;
+padding: 10px;
+margin: 0;
+text-decoration: underline;
+}
+
+article.post-link {
+padding-top: 10px;
+padding-bottom: 31px;
+padding-left: 10px: 
+}
+
+/* ----------------------------------- */
+
+/* Gallery Post Format Styles */
+article.post-gallery {
+	background-color: #222;
+	color: #FFF;
+	padding: 15px;
+}
+
+/* gallery img */
+article.post-gallery .gallery img {
+	border: none!important;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+article.post-gallery .wp-caption-text a {
+	font-size: 120%;
+	color: white;
+}
+
+article.post-gallery h2 {
+	text-align: center;
+}
+
+article.post-gallery h2 a {
+	color: white;
+	font-size: 140%;
+	text-decoration: underline;
+	text-transform: uppercase;
+	letter-spacing: .5px;
+}
+
+/* border last of type */
+
+article.post:last-of-type {
+	border-bottom: none; 
+}
+
+/* ----------------------------------- */
+
+/* Header */
+.site-header {
+	border-bottom: 1px solid #DDD;
+	margin-bottom: 20px;
+	padding: 12px 0 0 0;
+}
+
+.site-header h1 {
+	margin: 0;
+}
+
+.site-header h1 a:link,
+.site-header h1 a:visited {
+	text-decoration: none; 
+}
+/* Gaming Frontier */
+.site-header h5 {
+	margin: 0;
+	font-size: 14px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+/* ----------------------------------- */
+
+/* Standard Nav Menu */
+.site-nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+.site-nav ul:after { clear: both; }
+.site-nav ul { *zoom: 1; }
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+}
+
+.site-nav ul li a:link,
+.site-nav ul li a:visited {
+	display: block;
+}
+
+/* Header Nav Menu */
+.site-header nav {
+	margin-top: 15px;	
+}
+/* nav spacing */
+.site-header nav ul li {
+	margin-right: 9px;
+}
+/*  header nav links and borders */
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	padding: 10px 17px;
+	text-decoration: none;
+	border: 1px solid #DDD;
+	border-bottom: none;
+}
+/* header menu hover */
+.site-header nav ul li a:hover {
+	background-color: black;
+	color: white;
+}
+
+/* header nav links when selected */
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited {
+	font-weight: bold;
+	background-color: #2F4F4F;
+	color: white;
+}
+
+/* ----------------------------------- */
+
+/* Post Columns */
+.home-columns {
+	padding-top:20px;
+}
+/* Category Titles */
+.home-columns h2 {
+	margin-bottom: .7em;
+	text-align: left;
+}
+/* latest opinion | latest News */
+.home-columns .one-half {
+	width: 45%;
+	float: left;
+	margin-right: 10%;
+}
+
+.home-columns .last {
+	margin-right: 0;
+}
+
+/* post line separetor */
+.home-columns .post-item {
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 1px;
+	margin-bottom: 16px;
+}
+/* images for homepage */
+.home-columns .square-thumbnail {
+	float: left;
+	margin-right: 20px;
+	padding-bottom: 2px;
+}
+
+/* text link under image */
+.home-columns h4 {
+	margin-bottom: 3px;
+	font-weight: bold;
+}
+
+/* last post for coulumn */
+.home-columns .post-item:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+/* get rid of underline for link text */
+.home-columns h4 a {
+	text-decoration: none;
+}
+/* add underline for link text hover */
+.home-columns h4 a:hover {
+	text-decoration: underline;
+}
+/* date post was posted home page */
+.subtle-date {
+	margin-left: 5px;
+	font-weight: normal;
+	font-size: 80%;
+	color: #FFF;
+	background-color: #BABABA;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .33);
+	border-radius: 5px;
+	padding: 3px 7px;
+}
+/* content text */
+.home-columns p {
+	font-size: 90%;
+}
+
+/* button to view all posts for a category */
+.btn-a,
+.btn-a:link,
+.btn-a:visited {
+	margin-top: 12px;
+	display: inline-block;
+	background-color: #4a4d54;
+	text-decoration: none;
+	color: #FFF;
+	padding: 15px;
+	border-radius: 4px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, .6);
+}
+
+/* button to view all posts for a category */
+.btn-a:hover {
+	background-color: #004C87;
+}
+
+/* button to view all posts for a category */
+.horiz-center {
+	display: block;
+	text-align: center;
+}
+
+
+/* ----------------------------------- */
+
+/* Main Column */
+.main-column {
+	width: 66%;
+	float: left;
+}
+
+/* Side Column */
+.side-column {
+	width: 30%;
+	float: right;
+}
+
+/* ----------------------------------- */
+
+/* wigdet post seporator bar */
+.side-column .widget-item {
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+/* wigdet post titles */
+h2.widget-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: #888;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 138%;
+}
+/* wigdet spacing */
+.widget-item ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* bullet points wigdets */
+.widget-item ul li {
+	list-style-position: inside;
+	line-height: 1.5em;
+	list-style-type: square;
+	color: gold;
+}
+
+/* what does this do? */
+.widget-item p:last-child {
+	margin: 0;
+}
+
+/* Footer Widget spacing */
+.footer-widgets {
+	padding-top: 35px;
+	margin-right: -40px;
+}
+
+/* wigdet per footer line */
+.footer-widget-area {
+	width: 25%;
+	float: left;
+	box-sizing: border-box;
+	padding-right: 40px;
+}
+
+/* ----------------------------------- */
+
+
+
+/* ----------------------------------- */
+
+/* Footer */
+.site-footer {
+	margin-top: 30px;
+	border-top: 1px solid #DDD;
+	font-size: 84%;
+}
+
+/* Footer Nav Menu */
+.site-footer nav {
+	margin: 20px 0 12px 0;
+}
+
+/* footer nav links and borders */
+.site-footer nav ul li {
+	margin-right: 7px;
+	padding-right: 7px;
+	border-right: 1px solid #DDD;
+}
+
+.site-footer nav ul li:last-of-type {
+	border-right: none;
+}
+
+/* footer nav links when selected */
+.site-footer nav ul li.current-menu-item a:link,
+.site-footer nav ul li.current-menu-item a:visited {
+	font-weight: bold;
+	color : white;
+}
+
+/* ----------------------------------- */
+
+/* Page Layout */
+article.page h2 {
+	font-size: 225%;
+	margin-bottom: 15px;
+}
+
+/* Clearfix */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* Two Column Title Layout - Future Page */
+div.text-column {
+	width: 55%;
+	padding-left: 5px; 
+	float: left;
+	margin-bottom: 20px;
+}
+
+/* ----------------------------------- */
+
+/* Info Box Styles */
+div.info-box {
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 20px;
+	border: 1.3px solid white;
+}
+/* Disclaimer title */
+div.info-box h4 {
+	margin-bottom:  12px;
+	color: red;
+	font-weight: bold; 
+}
+
+/* Disclaimer statement */
+div.info-box p {
+	font-size: 90%;
+	font-style: italic;
+	line-height: 1.4;
+	margin-top: 5px;
+}
+
+/* ----------------------------------- */
+
+/* parent + | + child link */
+nav.site-nav.children-links.clearfix {
+	padding-top: 3px;
+	padding-left: 3px;
+}
+
+/* Children Links comp,cons,port */
+.children-links {
+	margin-bottom: 20px;
+	font-size: 95%;
+
+
+
+} 
+/* alignment */
+.children-links ul {
+	float: left;
+}  
+/* spacing */
+.children-links li {
+	margin-right: 15px;
+}
+
+/*  Parent Platform link css */
+.children-links .parent-link {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #DDD;
+	font-size: 120%;
+	font-weight: bold;
+}
+/* parent link color css */
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+	color: #B22222;
+}
+
+
+/* if children menu is clicked on */
+.children-links .current_page_item a:link,
+.children-links .current_page_item a:visited {
+	color: #DCDCDC;
+	cursor: default;
+	font-weight: bold;
+}
+
+/* children link color */
+.children-links a:link,
+.children-links a:visited {
+	color: #888;
+}
+
+/* ----------------------------------- */
+
+/* Post Styles author and date */
+.post h2 {
+	margin-bottom: 0;
+}
+
+p.post-info {
+	margin-top: 6px;
+	font-size: 85%;
+	color: grey;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+	color: grey;
+	font-size: 100%;
+	text-decoration: underline dotted;
+}
+
+/* ----------------------------------- */
+
+/* Image Styles */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.has-thumbnail {
+	position: relative;
+	padding-left: 200px;
+}
+
+div.post-thumbnail {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding-top: 15px; 
+}
+
+.attachment-banner-image {
+	max-height: 100%;
+
+	}
+.attachment-square-thumbnail {
+	height: 200px;
+	width: 400px;
+}
+
+/* ----------------------------------- */
+
+/* whole Search bar */
+div.hd-search {
+	float: right;
+}
+
+/* defualt search labe gone */
+div.hd-search label {
+	position: absolute;
+	left: -9999px;
+}
+
+/* search logo */
+div.hd-search #searchsubmit {
+	background-color: #4a4d54;
+	color: #D3D3D3;
+	padding: 4px 14px;
+	border: 1px solid #D3D3D3;
+	vertical-align: top;
+}
+
+/* search bar */
+div.hd-search #s {
+	vertical-align: top;
+	padding: 4px 0;
+	background-color: #F5F5F5;
+	border: 1px solid #778899;
+	color: black;
+}
+
+/* ------------------- */
+
+/* footer call to action */
+
+/*callout action background box */
+.footer-callout {
+	background-color: #4a4d54;
+	padding: 20px;
+	margin: 35px 0 0 0;
+	border: 1.5px solid grey;
+}
+
+/* callout image */
+.footer-callout-image {
+	float: left;
+	width: 30%;
+}
+
+/* whole callout action */
+.footer-callout-text {
+	float: right;
+	width: 67%;
+	padding-left: 20px;
+
+}
+
+/* Gaming United  */
+.footer-callout-text h2 a{
+	font-size: 1.7rem ;
+
+}
+
+/* learn more >> */
+.footer-callout-text p a {
+
+}
+
+/* Become a Gamer Today! */
+.footer-callout-text p {
+	font-size: 1.1rem;
+	padding-top: 11px;
+	padding-bottom: 1px;
+
+}
+
+/* -------------------- */
+
+/* About the Author section */
+
+
+/* whole background of about author*/
+.about-author {
+	background-color: #4a4d54;
+	padding: 20px;
+	border: 1.5px solid grey;
+}
+
+/* author image */
+.about-author-image {
+	float: left;
+	width: 28%;
+	position: relative;
+	border: 2px solid black;
+}
+/* author image block */
+.about-author-image img {
+	display: block;
+}
+
+/* Gaming Untied Text */
+.about-author-image p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: black;
+	padding: 5px 0;
+	text-align: center;
+	font-weight: bold;
+	text-shadow: 1.5px 1.5px 1.5px darkgrey;
+	color: #FFF;
+	margin: 0;
+}
+
+/* view all posts button */
+div.about-author-text a.btn-a {
+background-color: black;
+text-shadow: 1.5px 1.5px 1.5px darkgrey;
+border: 1.5px solid black;
+}
+
+/* view all posts button hover */
+div.about-author-text a.btn-a:hover  {
+background-color: #303030;
+border: 1.5px solid black;
+}
+
+/* about author title + text */
+.about-author-text {
+	float: right;
+	width: 68%;
+}
+
+/* About Author Description / text */
+div.about-author-text p {
+	font-size: 15px;
+}
+
+/*other posts ccs */
+.other-posts-by {
+	background-color: lightgrey;
+	padding: 15px;
+	border-radius: 4px;
+	border: 2px solid #000040;
+}
+
+/* other posts by Gaming United */
+.other-posts-by h4 {
+	color: grey;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+
+
+}
+/* other posts links */
+div.other-posts-by ul li a {
+	color: #000040;
+}
+
+/* unordered list formatting */
+.other-posts-by ul {
+	margin: 0;
+	padding: 0;
+}
+
+/* listing post css */
+.other-posts-by li {
+	list-style: none;
+	border-bottom: 1px dotted grey;
+}
+
+/* listing post css last child */
+.other-posts-by li:last-child {
+	border-bottom: none;
+}
+
+/* other posts links */
+.other-posts-by a {
+	text-decoration: none;
+	display: block;
+	padding: 3px 0;
+}
+
+/* ------------------- */
+
+/* about us CCS (about us page) */
+
+.bga {
+font-weight: bold;
+color: grey;
+}
+
+/* next page */
+a.prev.page-numbers {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a.next.page-numbers {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+a.page-numbers {
+	text-decoration: none;
+
+}
+
+span.page-numbers.dots {
+	color: #4682B4;
+	font-weight: bold;
+}
+
+/* ------------------- */
+
+/* Quick Add Form Styles */
+div.admin-quick-add {
+	background-color: #4a4d54;
+	border: 1.5px solid grey;
+	color: #4682B4;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+/* input boxes text area */
+.admin-quick-add input,
+.admin-quick-add textarea {
+	width: 100%;
+	border: 1.5px solid black;
+	padding: 10px;
+	margin: 0 0 10px 0;
+	box-sizing: border-box;
+	background-color: #adadad;
+	font-weight: bold;
+	font-family: Arial;
+
+}
+
+/* create post */
+#quick-add-button {
+	background-color: #323232;
+	color: #D3D3D3;
+	font-weight: bold; 
+	padding: 4px 14px;
+	border: 1.5px solid grey;
+	
+}
+
+/* create post hover */
+#quick-add-button:hover {
+	background-color: black;
+	text-shadow: 1.5px 1.5px 1.5px darkgrey;
+	color: #D3D3D3;
+	font-weight: bold; 
+	padding: 4px 14px;
+	border: 1.5px solid grey;
+}
+
+/* ------------------- */
+
+
